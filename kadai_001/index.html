@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- slickの読み込み -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
     <body>
       <!-- ヘッダー -->
@@ -21,8 +24,8 @@
           <!-- ナビゲーション -->
            <nav>
             <ul class="menu">
-              <li><a href="#about">About</a></li>
-              <li><a href="#works">Works </a></li>
+              <li><a class="menu-about" href="#about">About</a></li>
+              <li><a class="menu-works" href="#works">Works </a></li>
             </ul>
            </nav>
         </div>
@@ -31,10 +34,20 @@
       <!-- メイン -->
        <main>
         <article>
-          <!-- メインビジュ写真 -->
-          <div class="main-pic">
-            <img src="images/main.png" alt="Canonのカメラ">
-          </div>
+          <!-- メインビジュ -->
+          <section id="carousel-section">
+            <div class="carousel">
+              <div>
+                <img src="images/main.png" class="carouselImg">
+              </div>
+              <div>
+                <img src="images/main2.png" class="carouselImg">
+              </div>
+              <div>
+                <img src="images/main3.png" class="carouselImg">
+              </div>
+            </div>
+          </section>
 
           <!-- About -->
           <section class="about">
@@ -79,5 +92,14 @@
         <footer>
           <p>&copy; MyProfile. All rights reserved.</p>
         </footer>
+        <!-- TOPに戻るボタン -->
+         <a href="index.html" id="top-btn">TOP</a>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="js/script.js"></script>
+
     </body>
 </html>
